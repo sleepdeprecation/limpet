@@ -1,5 +1,7 @@
 #!/bin/bash
 
+set -x -e
+
 VERSION=`grep '^version' Cargo.toml | cut -d '"' -f 2`
 echo "Packaging version ${VERSION}..."
 cargo clean
