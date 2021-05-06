@@ -19,7 +19,7 @@ jobs:
           sh ./package.sh
 
       - uses: "marvinpinto/action-automatic-releases@latest"
-        name: "create prerelease"
+        name: "create release"
         with:
           repo_token: "${{ secrets.GITHUB_TOKEN }}"
           prerelease: false
