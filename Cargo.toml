@@ -1,7 +1,10 @@
 [package]
 name = "limpet"
-version = "0.2.3"
-authors = ["Steve Hoffman <steveh@goofy.net>"]
+version = "0.3.0"
+authors = [
+  "Steve Hoffman <steveh@goofy.net>",
+  "Journera Team <opensource@journera.com>"
+]
 edition = '2018'
 
 [dependencies]
