@@ -2,10 +2,8 @@ name: Create new release
 
 on:
   push:
-    branches:
-      - "master"
-  #   tags:
-  #     - "*"
+    tags:
+      - "*"
 
 jobs:
   create-release:
@@ -24,8 +22,6 @@ jobs:
         name: "create prerelease"
         with:
           repo_token: "${{ secrets.GITHUB_TOKEN }}"
-          automatic_release_tag: "latest"
-          prerelease: true
-          title: "Test build"
+          prerelease: false
           files: |
             *.zip
