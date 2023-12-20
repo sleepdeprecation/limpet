@@ -13,7 +13,7 @@ jobs:
 
       - name: "Build limpet"
         run: |
-          sudo apt install musl-dev musl-tools
+          sudo apt install musl-dev musl-tools gcc-aarch64-linux-gnu
           sh ./package.sh
 
       - name: Release
