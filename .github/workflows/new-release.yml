@@ -13,7 +13,6 @@ jobs:
 
       - name: "Build limpet"
         run: |
-          sudo apt install musl-dev
           sh ./package.sh
 
       - name: Release
